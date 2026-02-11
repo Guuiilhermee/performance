@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Duru+Sans&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --cor-fundo-dark: #0b1220;
+    --cor-fundo-light: #1b2438;
+    --cor-texto-dark: #9ca3af;
+    --cor-texto-light: #e5e7eb;
+    --cor-btn: #3e4658;
+    --cor-title: #a1a1a1;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Nunito", sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.container{
+    background-color: var(--cor-fundo-dark);
+    padding: 2em;
+}
+
+.content{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+
+.content h1{
+    color: var(--cor-texto-light);
+    margin: 0;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.content h2{
+    color: var(--cor-title);
+    margin: 0;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+.content p{
+    color: var(--cor-texto-dark);
+    font-size: 1.75rem;
+    font-weight: 150;
+}
+
+.content button{
+    font-size: 1.8rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    padding: .5em;
+    background-color: var(--cor-btn);
+    color: var(--cor-texto-light);
+}
+
+.content button:hover{
+    background-color: #262d3d;
+}
+
+.content_list{
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+}
+
+.content_list p{
+    color: var(--cor-texto-light);
+    font-size: 1.5rem;
+}
+
+.conteudo{
+    background-color: var(--cor-fundo-light);
+    padding: 2em;
+}
+
+.row{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+
+.row h2{
+    color: var(--cor-title);
+    margin: 0;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+.row_list{
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+    align-items: flex-start;
+}
+
+.row_list p{
+    color: var(--cor-texto-light);
+    font-size: 1.5rem;
+}
+
+.row_text p{
+    font-size: 1.75rem;
+    color: var(--cor-texto-dark);
+    font-weight: 150;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+}
+
+.card h3{
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
+    color: var(--cor-texto-light);
+}
+
+.dashboard-grid{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.dashboard-card{
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.dashboard-card h4{
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #111827;
+    font-size: 1.6rem;
+}
+
+.row_list li{
+    font-size: 1.5rem;
+    color: var(--cor-texto-light);
+    padding: 10px 0;
+    text-align: left;
+}
+
+.content_info li{
+    font-size: 1.5rem;
+    color: var(--cor-texto-light);
+    padding: 10px 0;
+    text-align: left;
+}
+
+.footer h2{
+    color: var(--cor-texto-light);
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+@media (max-width: 480px) {
+
+    .content_list,
+    .row_list {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .dashboard-grid {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .dashboard-card {
+        width: 100%;
+        max-width: 320px;
+        padding: 1.5rem;
+    }
+
+    .dashboard-card canvas {
+        width: 100% !important;
+        max-width: 320px;
+        height: auto !important;
+    }
+
+    .content h1 {
+        font-size: 2.2rem;
+    }
+
+    .content h2,
+    .row h2 {
+        font-size: 2rem;
+    }
+
+    .content p,
+    .row_text p {
+        font-size: 1.5rem;
+    }
+}
