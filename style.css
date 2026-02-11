@@ -203,12 +203,14 @@ body{
         flex-direction: column;
         gap: 2rem;
         align-items: center;
+        justify-content: center;
     }
 
     .dashboard-card {
         width: 100%;
         max-width: 320px;
         padding: 1.5rem;
+        justify-content: center;
     }
 
     .dashboard-card canvas {
