@@ -178,12 +178,134 @@ body{
     padding: 10px 0;
     text-align: left;
 }
-
 .footer h2{
     color: var(--cor-texto-light);
     font-size: 3rem;
     font-weight: 300;
 }
+
+/* PÁGINA SHOW.HTML */
+
+.show-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: var(--cor-title);
+    font-weight: 300;
+}
+
+.linha{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 0 4em;
+}
+
+.container-solu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.title-solu{
+    font-size: 2rem;
+    color: var(--cor-title);
+    margin: 0;
+    font-weight: 200;
+    text-align: center;
+}
+
+.text-solu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-solu abbr{
+    text-decoration: none !important; 
+    border-bottom: 0 !important;
+}
+
+.text-solu b{
+    color: #74a3ff;
+}
+
+.text-solu p,
+.text-solu li{
+    color: var(--cor-texto-light);
+    font-size: 1.5rem;
+}
+
+.text-solu .img-php{
+    width: 150px;
+}
+
+.text-solu .img-dash{
+    width: 550px;
+}
+
+.linha > *{
+    flex: 1 0 0%;
+}
+
+.problem{
+    max-width: 740px;
+    background-color: #31333B;
+    padding: 0;
+    box-shadow: -8px 5px 20px 1px rgba(0,0,0,0.42);
+}
+
+.problem img{
+    max-width: 100%;
+}
+
+.card-pro{
+    padding: .5em 1em 1em;
+}
+
+.card-pro p,
+.card-title{
+    margin: 0;
+}
+
+.card-pro p{
+    color: var(--cor-texto-light);
+}
+
+.card-title{
+    font-size: 1.75em;
+    margin-bottom: .25em; 
+    color: var(--cor-title);
+}
+
+.btn-show a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.btn-show button{
+    font-size: 1.8rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    padding: .5em;
+    background-color: var(--cor-fundo-light);
+    color: var(--cor-texto-light);
+}
+
+.btn-show button:hover{
+    background-color: #262d3d;
+}
+
+/* FIM PÁG SHOW */
 
 @media (max-width: 480px) {
 
