@@ -12,6 +12,27 @@
         body{
             background-color: #444856;
         }
+        @media (max-width: 575px){
+            .linha{
+                display: flex;
+                flex-direction: column;
+            }
+            .text-solu{
+                max-width: 300px;
+            }
+            .text-solu .img-dash{
+                width: 350px;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 992px){
+            .linha{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .text-solu{
+                max-width: 500px;
+            }
+        }
     </style>
 </head>
 <body>
